@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/256/6132/6132222.png">
+    <title>C++</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>C++ para OBI</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>O que é C++?</h2>
+            <p>C++ é uma linguagem de programação de propósito geral criada por Bjarne Stroustrup como uma extensão da
+                linguagem C. Ela oferece um alto nível de controle sobre os recursos do sistema e de hardware, e é
+                amplamente utilizada para desenvolver jogos, aplicativos de desktop, sistemas operacionais e muito mais.
+            </p>
+        </section>
+        <section>
+            <h2>O que é OBI?</h2>
+            <p>A Olimpíada Brasileira de Informática (também conhecida somente por OBI) é uma competição de programação
+                realizada anualmente desde 1999 pela Sociedade Brasileira de Computação. Tem por objetivo despertar nos
+                alunos (do quarto ano do Ensino Fundamental até o primeiro ano do Ensino Superior) o interesse por
+                ciência da computação.
+            <p></p><button class="info-button" onclick="openModal('oop-modal')">Mais</button>
+        </section>
+
+        <section>
+            <h2>Características do C++</h2>
+            <ul>
+                <li><strong>Orientação a objetos:</strong> Suporta encapsulamento, herança e polimorfismo. </li>
+                <li><strong>Compilada:</strong> O código é compilado diretamente para código de máquina, resultando em
+                    execução rápida.</li>
+                <li><strong>Tipagem estática:</strong> Os tipos de variáveis são verificados em tempo de compilação.
+                </li>
+                <li><strong>Gerenciamento manual de memória:</strong> Oferece controle preciso sobre alocação e
+                    liberação de memória.</li>
+                <li><strong>Biblioteca padrão rica:</strong> Inclui uma ampla gama de funções e classes úteis.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Exemplo de Código</h2>
+            <div class="code-example">
+                <pre><code>
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+using namespace std;
+
+        int main(){
+        string nome;
+
+            cout << "Digite seu nome: ";
+            cin >> nome;
+            cout << "Seja bem vindo " << nome;
+
+    return 0;
+}
+                </code></pre>
+
+            </div>
+            <p>Este exemplo demonstra algumas características do C++, como o uso de uma string e atribuição de um nome.
+            </p>
+            <p> <button class="info-button" onclick="openModal('static-typing-modal')">Mais</button></p>
+        </section>
+
+        <section>
+            <h2>Aplicações do C++</h2>
+            <p>C++ é amplamente utilizado em várias áreas, incluindo:</p>
+            <ul>
+                <li>Desenvolvimento de jogos</li>
+                <li>Sistemas operacionais</li>
+                <li>Navegadores web</li>
+                <li>Bancos de dados</li>
+                <li>Aplicações gráficas</li>
+                <li>Inteligência artificial e aprendizado de máquina</li>
+            </ul>
+        </section>
+    </main>
+
+
+    <div id="oop-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Como é dividido?
+            </h2>
+            <p>A OBI está organizada em duas modalidades, e cada modalidade é dividida em níveis. As duas modalidades,
+                denominadas Programação e Iniciação, são descritas a seguir.
+
+                Em todas as modalidades e níveis os alunos competem individualmente. Cada aluno poderá ser inscrito e
+                participar em apenas uma modalidade e nível.
+
+            </p>
+            <ul>
+                <li><strong>Iniciação: </strong> Na modalidade Iniciação, alunos que ainda não sabem programar competem
+                    resolvendo problemas de lógica e problemas de raciocínio computacional, sem uso de computador,
+                    apenas utilizando lápis e papel.</li>
+                <p></p>
+                <li><strong>Programação: </strong> A prova da modalidade Programação exige conhecimento em programação e
+                    é necessário prover um computador por participante, na ocasião da prova.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="static-typing-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Por onde estudar?</h2>
+            <p>o <a href="https://noic.com.br/materiais-informatica/curso/">Noic</a> agora tem um curso de programação
+                em que começará do zero. Cada aula é uma página com introdução teórica e links para problemas que
+                abordem o assunto da aula. </p>
+
+        </div>
+    </div>
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+        }
+
+        var modals = document.getElementsByClassName("modal");
+        var spans = document.getElementsByClassName("close");
+
+        for (let i = 0; i < spans.length; i++) {
+            spans[i].onclick = function () {
+                modals[i].style.display = "none";
+            }
+        }
+
+        window.onclick = function (event) {
+            for (let i = 0; i < modals.length; i++) {
+                if (event.target == modals[i]) {
+                    modals[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

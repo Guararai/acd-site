@@ -7,49 +7,67 @@
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
     <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/256/6132/6132222.png">
     <title>C++</title>
-
+   
 </head>
 
 <body>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
     <header>
         <h1>C++ para OBI</h1>
+        <div class="ferramentas-acessibilidade">
+            <button onclick="aumentarFonte()">A+</button>
+            <button onclick="diminuirFonte()">A-</button>
+            <button onclick="toggleAltoContraste()">Alto Contraste</button>
+            <button onclick="togglePretoEBranco()">Preto e Branco</button>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <h2>O que é C++?</h2>
-            <p>C++ é uma linguagem de programação de propósito geral criada por Bjarne Stroustrup como uma extensão da
-                linguagem C. Ela oferece um alto nível de controle sobre os recursos do sistema e de hardware, e é
-                amplamente utilizada para desenvolver jogos, aplicativos de desktop, sistemas operacionais e muito mais.
-            </p>
-        </section>
-        <section>
-            <h2>O que é OBI?</h2>
-            <p>A Olimpíada Brasileira de Informática (também conhecida somente por OBI) é uma competição de programação
-                realizada anualmente desde 1999 pela Sociedade Brasileira de Computação. Tem por objetivo despertar nos
-                alunos (do quarto ano do Ensino Fundamental até o primeiro ano do Ensino Superior) o interesse por
-                ciência da computação.
-            <p></p><button class="info-button" onclick="openModal('oop-modal')">Mais</button>
-        </section>
+    <div class="container-texto">
+        <main>
+            <section>
+                <h2>O que é C++?</h2>
+                <p>C++ é uma linguagem de programação de propósito geral criada por Bjarne Stroustrup como uma extensão da
+                    linguagem C. Ela oferece um alto nível de controle sobre os recursos do sistema e de hardware, e é
+                    amplamente utilizada para desenvolver jogos, aplicativos de desktop, sistemas operacionais e muito mais.
+                </p>
+            </section>
+            <section>
+                <h2>O que é OBI?</h2>
+                <p>A Olimpíada Brasileira de Informática (também conhecida somente por OBI) é uma competição de programação
+                    realizada anualmente desde 1999 pela Sociedade Brasileira de Computação. Tem por objetivo despertar nos
+                    alunos (do quarto ano do Ensino Fundamental até o primeiro ano do Ensino Superior) o interesse por
+                    ciência da computação.
+                <p></p><button class="info-button" onclick="openModal('oop-modal')">Mais</button>
+            </section>
 
-        <section>
-            <h2>Características do C++</h2>
-            <ul>
-                <li><strong>Orientação a objetos:</strong> Suporta encapsulamento, herança e polimorfismo. </li>
-                <li><strong>Compilada:</strong> O código é compilado diretamente para código de máquina, resultando em
-                    execução rápida.</li>
-                <li><strong>Tipagem estática:</strong> Os tipos de variáveis são verificados em tempo de compilação.
-                </li>
-                <li><strong>Gerenciamento manual de memória:</strong> Oferece controle preciso sobre alocação e
-                    liberação de memória.</li>
-                <li><strong>Biblioteca padrão rica:</strong> Inclui uma ampla gama de funções e classes úteis.</li>
-            </ul>
-        </section>
+            <section>
+                <h2>Características do C++</h2>
+                <ul>
+                    <li><strong>Orientação a objetos:</strong> Suporta encapsulamento, herança e polimorfismo. </li>
+                    <li><strong>Compilada:</strong> O código é compilado diretamente para código de máquina, resultando em
+                        execução rápida.</li>
+                    <li><strong>Tipagem estática:</strong> Os tipos de variáveis são verificados em tempo de compilação.
+                    </li>
+                    <li><strong>Gerenciamento manual de memória:</strong> Oferece controle preciso sobre alocação e
+                        liberação de memória.</li>
+                    <li><strong>Biblioteca padrão rica:</strong> Inclui uma ampla gama de funções e classes úteis.</li>
+                </ul>
+            </section>
 
-        <section>
-            <h2>Exemplo de Código</h2>
-            <div class="code-example">
-                <pre><code>
+            <section>
+                <h2>Exemplo de Código</h2>
+                <div class="code-example">
+                    <pre><code>
 #include &lt;iostream&gt;
 #include &lt;string&gt;
 
@@ -64,46 +82,42 @@ using namespace std;
 
     return 0;
 }
-                </code></pre>
+                    </code></pre>
+                </div>
+                <p>Este exemplo demonstra algumas características do C++, como o uso de uma string e atribuição de um nome.
+                </p>
+                <p><button class="info-button" onclick="openModal('static-typing-modal')">Mais</button></p>
+            </section>
 
-            </div>
-            <p>Este exemplo demonstra algumas características do C++, como o uso de uma string e atribuição de um nome.
-            </p>
-            <p> <button class="info-button" onclick="openModal('static-typing-modal')">Mais</button></p>
-        </section>
-
-        <section>
-            <h2>Aplicações do C++</h2>
-            <p>C++ é amplamente utilizado em várias áreas, incluindo:</p>
-            <ul>
-                <li>Desenvolvimento de jogos</li>
-                <li>Sistemas operacionais</li>
-                <li>Navegadores web</li>
-                <li>Bancos de dados</li>
-                <li>Aplicações gráficas</li>
-                <li>Inteligência artificial e aprendizado de máquina</li>
-            </ul>
-        </section>
-    </main>
-
+            <section>
+                <h2>Aplicações do C++</h2>
+                <p>C++ é amplamente utilizado em várias áreas, incluindo:</p>
+                <ul>
+                    <li>Desenvolvimento de jogos</li>
+                    <li>Sistemas operacionais</li>
+                    <li>Navegadores web</li>
+                    <li>Bancos de dados</li>
+                    <li>Aplicações gráficas</li>
+                    <li>Inteligência artificial e aprendizado de máquina</li>
+                </ul>
+            </section>
+        </main>
+    </div>
 
     <div id="oop-modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2>Como é dividido?
-            </h2>
+            <h2>Como é dividido?</h2>
             <p>A OBI está organizada em duas modalidades, e cada modalidade é dividida em níveis. As duas modalidades,
                 denominadas Programação e Iniciação, são descritas a seguir.
 
                 Em todas as modalidades e níveis os alunos competem individualmente. Cada aluno poderá ser inscrito e
                 participar em apenas uma modalidade e nível.
-
             </p>
             <ul>
                 <li><strong>Iniciação: </strong> Na modalidade Iniciação, alunos que ainda não sabem programar competem
                     resolvendo problemas de lógica e problemas de raciocínio computacional, sem uso de computador,
                     apenas utilizando lápis e papel.</li>
-                <p></p>
                 <li><strong>Programação: </strong> A prova da modalidade Programação exige conhecimento em programação e
                     é necessário prover um computador por participante, na ocasião da prova.</li>
             </ul>
@@ -116,11 +130,37 @@ using namespace std;
             <h2>Por onde estudar?</h2>
             <p>o <a href="https://noic.com.br/materiais-informatica/curso/">Noic</a> agora tem um curso de programação
                 em que começará do zero. Cada aula é uma página com introdução teórica e links para problemas que
-                abordem o assunto da aula. </p>
-
+                abordem o assunto da aula.</p>
         </div>
     </div>
+
     <script>
+        let tamanhoFonte = 16;
+
+        function aumentarFonte() {
+            tamanhoFonte += 2;
+            document.body.style.fontSize = tamanhoFonte + "px";
+        }
+
+        function diminuirFonte() {
+            tamanhoFonte -= 2;
+            document.body.style.fontSize = tamanhoFonte + "px";
+        }
+
+        function toggleAltoContraste() {
+            document.body.classList.toggle("alto-contraste");
+        }
+
+        function togglePretoEBranco() {
+            document.body.classList.toggle("preto-e-branco");
+            const vlibrasButton = document.querySelector('[vw-access-button]');
+            if (document.body.classList.contains("preto-e-branco")) {
+                vlibrasButton.style.display = 'none';
+            } else {
+                vlibrasButton.style.display = 'block';
+            }
+        }
+
         function openModal(modalId) {
             document.getElementById(modalId).style.display = "block";
         }

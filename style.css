@@ -5,7 +5,15 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    background-image: url('https://i.ytimg.com/vi/Hkg3KHyuNOw/maxresdefault.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: background 0.3s, color 0.3s;
 }
+
+
+
 header {
     background-color: #0077be;
     color: white;
@@ -62,4 +70,101 @@ h2 {
     padding: 5px 10px;
     cursor: pointer;
     margin-left: 10px;
+}
+.container-texto {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.code-example {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    transition: background 0.3s, color 0.3s;
+}
+
+.code-example code {
+    color: #000;
+}
+
+.alto-contraste {
+    color: #fff;
+    background-color: #000;
+    background-image: url("https://psxbrasil.com.br/wp-content/uploads/2020/10/Bloodborne-6-1080.jpg");
+    background-size: cover;
+}
+
+.alto-contraste .container-texto {
+    background-color: #000;
+}
+
+.alto-contraste .code-example {
+    background-color: #333;
+    color: #fff;
+}
+
+.alto-contraste .code-example code {
+    color: #fff;
+}
+
+.preto-e-branco {
+    color: #000;
+    background-color: #fff;
+    background-image: url("https://psxbrasil.com.br/wp-content/uploads/2020/10/Bloodborne-6-1080.jpg");
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+.preto-e-branco .container-texto {
+    background-color: #fff;
+}
+
+.preto-e-branco .code-example {
+    background-color: #fff;
+    color: #000;
+}
+
+.preto-e-branco .code-example code {
+    color: #000;
+}
+
+.modal-content {
+    background-color: #fff;
+    color: #000;
+    transition: background 0.3s, color 0.3s;
+}
+
+.alto-contraste .modal-content {
+    background-color: #000;
+    color: #fff;
+}
+
+.preto-e-branco .modal-content {
+    background-color: #fff;
+    color: #000;
+}
+
+.vw-plugin-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.ferramentas-acessibilidade button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ferramentas-acessibilidade button:hover {
+    background-color: #0056b3;
 }
